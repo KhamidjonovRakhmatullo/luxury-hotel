@@ -2,11 +2,14 @@ import React from "react";
 import home1 from "../../asserts/img2.png";
 import home2 from "../../asserts/img3.png";
 import FooterComponent from "../footer";
+import NavbarComponent from "../navbar";
+// import { BgImage } from "./style";
 
 const HomeComponent = () => {
   return (
     //main
     <div>
+      <NavbarComponent></NavbarComponent>
       <div
         style={{
           display: "flex",

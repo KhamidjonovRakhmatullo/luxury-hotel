@@ -2,12 +2,48 @@ import React from "react";
 import rome1 from "../../asserts/room1.png";
 import rome2 from "../../asserts/room2.png";
 import rome3 from "../../asserts/room3.png";
-
+import { BgImage, DJA, Button } from "./style";
 import FooterComponent from "../footer";
+import roomsBg from '../../asserts/roomsImage.png'
 
 const RoomsComponent = () => {
   return (
   <div>
+    <BgImage style={{
+      backgroundImage: `url(${roomsBg})`
+    }}>
+    <div>
+        <h2>Welcome to</h2>
+        <h1>LUXUARY</h1>
+        <h2>HOTELS</h2>
+        <p>
+          Book your stay and enjoy Luxury redefined at the most affordable
+          rates.
+        </p>
+      </div>
+      <DJA style={{
+        // border: "2px solid red",
+        marginTop: "30px",
+        flexDirection: "column"
+      }}>
+        <DJA style={{
+          marginTop: "100px"
+        }}>
+          <Button>BOOK NOW</Button>
+        </DJA>
+        <DJA style={{marginTop: "30px"}}>
+          <p>Scroll</p>
+        </DJA>
+        <DJA style={{
+          padding: "30px",
+          backgroundColor: "white",
+          color: "black",
+          borderRadius: "50px",
+          fontWeight: "600",
+          fontSize: "25px"
+        }}>\/</DJA>
+      </DJA>
+      </BgImage>
     <div
       style={{
         display: "flex",

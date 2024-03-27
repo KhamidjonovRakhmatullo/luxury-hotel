@@ -6,10 +6,44 @@ import swpool from "../../asserts/swpool.png";
 import restourant from "../../asserts/restourant.png";
 import laundry from "../../asserts/laundry.png";
 import FooterComponent from "../footer";
+import { BgImage, DJA, Button } from "./style";
 
 const FacilitiesComponent = () => {
   return (
     <div>
+      <BgImage $facilityId>
+      <div>
+        <h2>Welcome to</h2>
+        <h1>LUXUARY</h1>
+        <h2>HOTELS</h2>
+        <p>
+          Book your stay and enjoy Luxury redefined at the most affordable
+          rates.
+        </p>
+      </div>
+      <DJA style={{
+        // border: "2px solid red",
+        marginTop: "30px",
+        flexDirection: "column"
+      }}>
+        <DJA style={{
+          marginTop: "100px"
+        }}>
+          <Button>BOOK NOW</Button>
+        </DJA>
+        <DJA style={{marginTop: "30px"}}>
+          <p>Scroll</p>
+        </DJA>
+        <DJA style={{
+          padding: "30px",
+          backgroundColor: "white",
+          color: "black",
+          borderRadius: "50px",
+          fontWeight: "600",
+          fontSize: "25px"
+        }}>\/</DJA>
+      </DJA>
+      </BgImage>
       <div
         style={{
           display: "flex",
